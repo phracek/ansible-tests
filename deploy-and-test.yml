@@ -68,8 +68,6 @@
     - name: Clone and test upstream container repositories
       include_tasks: ./tasks/verify_in_openshift.yml
       loop:
-        - rhel8-nodejs-ex-20
-        - rhel8-nodejs-ex-20-minimal
         - rhel8-cakephp-ex-74
         #- rhel8-cakephp-ex-80 It looks like no prepared for PHP-8.0
         #- rhel8-cakephp-ex-81 It looks like no prepared for PHP-8.0
@@ -94,8 +92,6 @@
         - rhel9-mariadb-1011-container
         - rhel9-nginx-ex-122
         - rhel9-nginx-ex-124
-        - rhel9-nodejs-ex-20
-        - rhel9-nodejs-ex-20-minimal
         - rhel9-nodejs-ex-22
         - rhel9-nodejs-ex-22-minimal
         - rhel9-nodejs-ex-24
@@ -158,8 +154,6 @@
     - name: Check s2i containers
       include_tasks: ./tasks/verify_in_openshift.yml
       loop:
-        - rhel8-nodejs-ex-20
-        - rhel8-nodejs-ex-20-minimal
         - rhel8-nodejs-ex-22
         - rhel8-nodejs-ex-22-minimal
         - rhel8-cakephp-ex-74
@@ -171,8 +165,6 @@
         - rhel8-s2i-ruby-33-container
         - rhel9-cakephp-ex-80
         - rhel9-cakephp-ex-83
-        - rhel9-nodejs-ex-20
-        - rhel9-nodejs-ex-20-minimal
         - rhel9-nodejs-ex-22
         - rhel9-nodejs-ex-22-minimal
         - rhel9-nodejs-ex-24
