@@ -120,6 +120,7 @@
         - rhel10-valkey-8
         - rhel10-nginx-ex-126
         - rhel10-cakephp-ex-83
+        - rhel10-cakephp-ex-84
       when: (github_repo == "") and (ext_test == "")
 
     - name: Check None-s2i containers
@@ -182,6 +183,7 @@
         - rhel10-s2i-python-312-minimal-container
         - rhel10-s2i-perl-540-container
         - rhel10-cakephp-ex-83
+        - rhel10-cakephp-ex-84
       when: (github_repo == "") and (ext_test is defined) and (ext_test == "s2i")
 
     - name: Clone and test only one upstream container repository
